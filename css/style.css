@@ -89,6 +89,6 @@ h6 {
 .navbar-image {
   cursor: pointer;
 }
-.dropdown-menu {
-  right: 0;
+#dropdown-nav-elem {
+  right: 0px;
 }
