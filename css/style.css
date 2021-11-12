@@ -1,32 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap");
 
-body{
-    font-family:  sans-serif;
-        
+body {
+  font-family: sans-serif;
+  width: 100%;
 }
 
-.navbar{
-    background-color: #101010;
+.navbar {
+  background-color: #101010;
 }
-.navbar-expand-lg .navbar-collapse .nav-link{
-    padding-left :0;
-    padding-right: 0;
-    padding-bottom: 0;
-    color: #fff;
-    margin-right: 20px;
-    line-height: 1.2;
-    font-size: 1rem;
-}
-
-.navbar-expand-lg .navbar-collapse .nav-link:hover{
-   
-    cursor: pointer;
-    color: #999494;
-
+.navbar-expand-lg .navbar-collapse .nav-link {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  color: #fff;
+  margin-right: 20px;
+  line-height: 1.2;
+  font-size: 1rem;
 }
 
+.navbar-expand-lg .navbar-collapse .nav-link:hover {
+  cursor: pointer;
+  color: #999494;
+}
 
+a {
+  color: #fff;
+}
 
-a{
-    color: #fff;
+.search-icon-nav {
+  width: 3%;
+  height: 3%;
+  background-color: transparent;
+  color: white;
+  margin-right: 15px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.search-icon-nav:hover {
+  opacity: 1;
+}
+.bell-icon-nav {
+  width: 3%;
+  height: 3%;
+  margin-right: 15px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.bell-icon-nav:hover {
+  opacity: 1;
+}
+
+.p-navbar-kids {
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: larger;
+  opacity: 0.7;
+  margin-top: 15px;
+}
+
+.p-navbar-kids:hover {
+  opacity: 1;
+}
+.p-navbar-kids {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.navbar-image {
+  cursor: pointer;
 }
