@@ -4,6 +4,10 @@ body {
   font-family: sans-serif;
   width: 100%;
 }
+.all-page-section {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 .navbar {
   background-color: #101010;
