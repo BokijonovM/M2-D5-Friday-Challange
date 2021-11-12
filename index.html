@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+
+    <script src="https://kit.fontawesome.com/73c4ca1b43.js" crossorigin="anonymous"></script>
+    
+
     <title>M2-D5</title>
     <style>
         .bgbodyDark{
@@ -24,6 +28,38 @@
         /* [3] Finally, transforming the image when container gets hovered */
         .img-hover-zoom:hover img {
         transform: scale(1.5);
+        }
+        footer{
+            width: 100%;
+            padding:50px;
+            background-color: black;
+        }
+        footer p{
+            font-size: 10px;
+            color:rgb(162, 161, 163);
+            margin: 10px;
+            padding:0;
+        }
+
+        footer i {
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        footer.container :first-child{
+            padding-left: -0.5rem;
+            padding-right: -0.5rem; 
+        }
+
+        footer.container.row.col p i{
+            padding:0;
+        }
+
+        .service-code{
+            font-size: 10px;
+        }
+        .p-left-0{
+            padding-left:0;
         }
     </style>
 </head>
@@ -210,7 +246,33 @@
             </div>        
         </section>
 
-    
+
+        <footer>
+            <div class="container-fluid  text-light">
+                <div class="row pt-3">
+                    <div class="col offset-2">
+                        <p><i class="p-left-0 fab fa-facebook-square"></i>    <i class="fab fa-instagram"></i> <i class="fab fa-twitter"></i> <i class="fab fa-youtube"></i></p>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-2 offset-2"><p>Audio and Subtitles</p><p> Media Center</p><p>Privacy</p> <p>Contact Us</p></div>
+                    <div class="col-2"><p> Audio Description</p> <p>Investor Relation</p><p>Legal Notices</p></div>
+                    <div class="col-2"><p>Help Center</p> <p>Jobs</p><p>Cookie Preferences</p></div>
+                    <div class="col-2"><p>Gift Cards</p> <p>Terms of Use</p> <p>Corporate Information</p></div>
+
+                </div>
+                <div class=" row">
+                   <div class="col offset-2">
+                    <p><a href="" class="service-code btn btn-outline-secondary p-1 ">Service Code</a></p>
+                    <p class="pd-5">1997-2019 Netflix, Inc. {i-od00fcda2fdf9e0de}</p>
+                   </div>
+                </div>
+            </div>
+    </footer>
+
+
 
 
 
