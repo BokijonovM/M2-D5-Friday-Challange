@@ -70,3 +70,6 @@ a {
 .navbar-image {
   cursor: pointer;
 }
+.dropdown-menu {
+  right: 0;
+}
