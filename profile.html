@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/73c4ca1b43.js" crossorigin="anonymous"></script>
-<style>
+    <style>
     body{
         background-color:black;
         width: 100%;
@@ -25,6 +26,47 @@
 </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: black;  position: relative;">
+        <a class="navbar-brand" href="/index.html"><img src="/assets/netflix_logo.png" width="150px" alt="" srcset="" ></a>
+        <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link " href="#">TV shows</a>
+                </li>
+                
+                <li class="nav-item">
+                <a class="nav-link ">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ">Recently Added</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  ">My List</a>
+                </li>
+            </ul>
+            <img class="search-icon-nav" src="https://th.bing.com/th/id/R.cff0f9906d665afa10bbcfa8deae8ea0?rik=nWGSRWZqnHW8lA&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fn%2fU%2fH%2f1%2fH%2fu%2fsearch-icon-white-one-hi.png&ehk=U8fjFUGN%2bifwo7hnzFqRmxm7ZYQfH3eO%2bd%2fB70vRwfI%3d&risl=&pid=ImgRaw&r=0">
+            <p class="p-navbar-kids">KIDS</p>
+            <img class="bell-icon-nav" src="https://clipground.com/images/white-bell-icon-png-3.png">
+            <div class="btn-group ">
+                <button type="button" class="btn btn-outline-secondary dropdown-toggle border-0" data-toggle="dropdown" aria-expanded="false">
+                    <img class="navbar-image" src="/assets/kids_icon.png" alt="kids icon" srcset="" width="40px">
+            
+                </button>
+                <div class="dropdown-menu"id="dropdown-nav-elem">
+                  <a class="dropdown-item" href="./accountSettings.html">Settings</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="./profile.html">Profile</a>
+                </div>
+              </div>
+        </div>                   
+      </nav>
     <div class="container">
     <div class="col-8 offset-2">
         <form action="submit">
