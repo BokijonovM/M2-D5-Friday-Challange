@@ -1,15 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap");
 
-
-body{
-    font-family:  sans-serif;
-    
-        
-
 body {
   font-family: sans-serif;
   width: 100%;
-
 }
 
 .navbar {
@@ -65,27 +58,24 @@ a {
   margin-top: 15px;
 }
 
-
-a{
-    color: #fff;
+a {
+  color: #fff;
 }
 
-.Settings{
-
-    width: 50%;
-    margin-top: 2.5%;
-    }
-
-hr{
-   border-top: 1px solid gray ; 
-   width:100%;
-    margin:0 auto; 
+.Settings {
+  width: 50%;
+  margin-top: 2.5%;
 }
 
-h6{
-    font-size: 12px;
+hr {
+  border-top: 1px solid gray;
+  width: 100%;
+  margin: 0 auto;
 }
 
+h6 {
+  font-size: 12px;
+}
 
 .p-navbar-kids:hover {
   opacity: 1;
@@ -102,4 +92,3 @@ h6{
 .dropdown-menu {
   right: 0;
 }
-
