@@ -7,6 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <title>M2-D5</title>
+    <style>
+        .bgbodyDark{
+            background-color: black;
+        }
+        /* [1] The container */
+        .img-hover-zoom {
+        overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+        }
+
+        /* [2] Transition property for smooth transformation of images */
+        .img-hover-zoom img {
+        transition: transform .9s ease;
+        }
+
+        /* [3] Finally, transforming the image when container gets hovered */
+        .img-hover-zoom:hover img {
+        transform: scale(1.5);
+        }
+    </style>
 </head>
 <body>
                                               <!-- 'navbar' -->
@@ -53,6 +72,144 @@
        
 
       
+
+<body class="bgbodyDark text-white">
+    <section>
+        <div class="row">
+            <div class="row">
+                <div class="ml-4 pl-4 mt-3 d-flex">  
+                    <h1 class="pr-3">TV Shows</h1>
+                    <div class="dropdown mt-2">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                          Genres
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="d-table-cell">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Comedy</a>
+                                <a class="dropdown-item" href="#">Family</a>
+                                <a class="dropdown-item" href="#">Kids</a>
+                                <a class="dropdown-item" href="#">Crime</a>
+                            </div> 
+                            <div class="d-table-cell">
+                                <a class="dropdown-item" href="#">Fantasy</a>
+                                <a class="dropdown-item" href="#">Reality</a>
+                                <a class="dropdown-item" href="#">Soap</a>
+                                <a class="dropdown-item" href="#">War</a>
+                                <a class="dropdown-item" href="#">Romance</a>
+                            </div> 
+                            <div class="d-table-cell">
+                                <a class="dropdown-item" href="#">Talk</a>
+                                <a class="dropdown-item" href="#">Western</a>
+                                <a class="dropdown-item" href="#">History</a>
+                                <a class="dropdown-item" href="#">Mystery</a>
+                                <a class="dropdown-item" href="#">Documentary</a>
+                            </div> 
+                            <div class="d-table-cell">
+                                <a class="dropdown-item" href="#">Adventure</a>
+                                <a class="dropdown-item" href="#">News</a>
+                                <a class="dropdown-item" href="#">Horror</a>
+                                <a class="dropdown-item" href="#">Drama</a>
+                                <a class="dropdown-item" href="#">Animation</a>
+                            </div>  
+                            <div class="d-table-cell">
+                                <a class="dropdown-item" href="#">Scene Fiction</a>
+                                <a class="dropdown-item" href="#">TV Movie</a>
+                                <a class="dropdown-item" href="#">Reality</a>
+                                <a class="dropdown-item" href="#">Music</a>
+                                <a class="dropdown-item" href="#">Thriller</a>
+                            </div>
+                        </div>
+                      </div>
+                </div>            
+            </div>
+        </div>
+    </section>
+      <!--trending now-->
+    <section>
+        <div class="ml-2 pl-3 mt-3 mb-n5 pb-3" >
+            <h5>Trending now</h5>
+        </div>
+        <div class="row">
+            <div class="col row justify-content-center m-4 mt-0 pt-0">
+                <div class="card border-0 col-sm-5 col-md-4 col-lg-3 col-xl-2 pt-2 pb-2 bg-transparent pl-0 pr-1 img-hover-zoom">
+                    <img src="/assets/media/media20.jpg" class="card-img-top" alt="..." width="100%" height="100%">
+                </div>
+                <div class="card border-0 col-sm-5 col-md-4 col-lg-3 col-xl-2 pt-2 pb-2 bg-transparent pl-0 pr-1 img-hover-zoom">
+                    <img src="/assets/media/media2.webp" class="card-img-top" alt="..." width="100%" height="100%">
+                </div>
+                <div class="card border-0 col-sm-5 col-md-4 col-lg-3 col-xl-2 pt-2 pb-2 bg-transparent pl-0 pr-1 img-hover-zoom">
+                    <img src="/assets/media/media3.webp" class="card-img-top" alt="..." width="100%" height="100%">
+                </div>
+                <div class="card border-0 col-sm-5 col-md-4 col-lg-3 col-xl-2 pt-2 pb-2 bg-transparent pl-0 pr-1 img-hover-zoom">
+                    <img src="/assets/media/media4.jpg" class="card-img-top" alt="..." width="100%" height="100%">
+                </div>
+                <div class="card border-0 col-sm-5 col-md-4 col-lg-3 col-xl-2 pt-2 pb-2 bg-transparent pl-0 pr-1 img-hover-zoom">
+                    <img src="/assets/media/media5.webp" class="card-img-top" alt="..." width="100%" height="100%">
+                </div>
+                <div class="card border-0 col-sm-5 col-md-4 col-lg-3 col-xl-2 pt-2 pb-2 bg-transparent pl-0 pr-1 img-hover-zoom">
+                    <img src="/assets/media/media6.jpg" class="card-img-top" alt="..." width="100%" height="100%">
+                </div>
+                
+            </div>
+        </div>        
+    </section>
+    <!--Watch ot again-->
+    <section>
+        <h5 class="ml-2 pl-3 mt-3 mb-n5 pb-4">Watch it again</h5>     
+        <div class="row">
+            <div class="col row justify-content-center m-4 mt-0 pt-0" id="watch-it-again">
+                <div class="card border-0 col-sm-5 col-md-4 col-lg-3 col-xl-2 pt-2 pb-2 bg-transparent pl-0 pr-1 img-hover-zoom">
+                    <img src="/assets/media/media7.webp" class="card-img-top" alt="..." width="100%" height="100%">
+                </div>
+                <div class="card border-0 col-sm-5 col-md-4 col-lg-3 col-xl-2 pt-2 pb-2 bg-transparent pl-0 pr-1 img-hover-zoom">
+                    <img src="/assets/media/media8.webp" class="card-img-top" alt="..." width="100%" height="100%">
+                </div>
+                <div class="card border-0 col-sm-5 col-md-4 col-lg-3 col-xl-2 pt-2 pb-2 bg-transparent pl-0 pr-1 img-hover-zoom">
+                    <img src="/assets/media/media9.jpg" class="card-img-top" alt="..." width="100%" height="100%">
+                </div>
+                <div class="card border-0 col-sm-5 col-md-4 col-lg-3 col-xl-2 pt-2 pb-2 bg-transparent pl-0 pr-1 img-hover-zoom">
+                    <img src="/assets/media/media10.jpg" class="card-img-top" alt="..." width="100%" height="100%">
+                </div>
+                <div class="card border-0 col-sm-5 col-md-4 col-lg-3 col-xl-2 pt-2 pb-2 bg-transparent pl-0 pr-1 img-hover-zoom">
+                    <img src="/assets/media/media11.jpg" class="card-img-top" alt="..." width="100%" height="100%">
+                </div>
+                <div class="card border-0 col-sm-5 col-md-4 col-lg-3 col-xl-2 pt-2 pb-2 bg-transparent pl-0 pr-1 img-hover-zoom">
+                    <img src="/assets/media/media12.jpg" class="card-img-top" alt="..." width="100%" height="100%">
+                </div>
+                
+            </div>
+        </div>        
+    </section>
+
+        <!--New Releases-->
+        <section>
+            <h5 class="ml-2 pl-3 mt-3 mb-n5 pb-4" style="background-color: black;">New Releases</h5>     
+            <div class="row">
+                <div class="col row justify-content-center m-4 mt-0 pt-0" id="watch-it-again">
+                    <div class="card border-0 col-sm-5 col-md-4 col-lg-3 col-xl-2 pt-2 pb-2 bg-transparent pl-0 pr-1 img-hover-zoom">
+                        <img src="/assets/media/media13.jpg" class="card-img-top" alt="..." width="100%" height="100%">
+                    </div>
+                    <div class="card border-0 col-sm-5 col-md-4 col-lg-3 col-xl-2 pt-2 pb-2 bg-transparent pl-0 pr-1 img-hover-zoom">
+                        <img src="/assets/media/media14.webp" class="card-img-top" alt="..." width="100%" height="100%">
+                    </div>
+                    <div class="card border-0 col-sm-5 col-md-4 col-lg-3 col-xl-2 pt-2 pb-2 bg-transparent pl-0 pr-1 img-hover-zoom">
+                        <img src="/assets/media/media15.jpg" class="card-img-top" alt="..." width="100%" height="100%">
+                    </div>
+                    <div class="card border-0 col-sm-5 col-md-4 col-lg-3 col-xl-2 pt-2 pb-2 bg-transparent pl-0 pr-1 img-hover-zoom">
+                        <img src="/assets/media/media16.webp" class="card-img-top" alt="..." width="100%" height="100%">
+                    </div>
+                    <div class="card border-0 col-sm-5 col-md-4 col-lg-3 col-xl-2 pt-2 pb-2 bg-transparent pl-0 pr-1 img-hover-zoom">
+                        <img src="/assets/media/media17.jpg" class="card-img-top" alt="..." width="100%" height="100%">
+                    </div>
+                    <div class="card border-0 col-sm-5 col-md-4 col-lg-3 col-xl-2 pt-2 pb-2 bg-transparent pl-0 pr-1 img-hover-zoom">
+                        <img src="/assets/media/media18.jpg" class="card-img-top" alt="..." width="100%" height="100%">
+                    </div>
+                    
+                </div>
+            </div>        
+        </section>
+
     
 
 
