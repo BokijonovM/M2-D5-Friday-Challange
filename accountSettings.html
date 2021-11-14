@@ -19,10 +19,10 @@
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-lg navbar-light"
+      class="navbar navbar-expand-lg navbar-light m-0 p-0 pr-3"
       style="background-color: black; position: relative"
     >
-      <a class="navbar-brand" href="./index.html"
+      <a class="navbar-brand m-0 p-0" href="/index.html"
         ><img src="/assets/netflix_logo.png" width="150px" alt="" srcset=""
       /></a>
       <button
@@ -37,7 +37,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto mt-n2">
           <li class="nav-item active">
             <a class="nav-link text-light" href="#"
               >Home <span class="sr-only">(current)</span></a
@@ -58,38 +58,43 @@
         </ul>
         <img
           class="search-icon-nav"
+          id="search-icon-nav"
+          onClick="hideAppear()"
           src="https://th.bing.com/th/id/R.cff0f9906d665afa10bbcfa8deae8ea0?rik=nWGSRWZqnHW8lA&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fn%2fU%2fH%2f1%2fH%2fu%2fsearch-icon-white-one-hi.png&ehk=U8fjFUGN%2bifwo7hnzFqRmxm7ZYQfH3eO%2bd%2fB70vRwfI%3d&risl=&pid=ImgRaw&r=0"
         />
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            id="nav-form-control"
+            style="display: none"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
         <p class="p-navbar-kids" style="color: white">KIDS</p>
         <img
           class="bell-icon-nav"
           src="https://clipground.com/images/white-bell-icon-png-3.png"
         />
-        <div class="btn-group">
-          <button
-            type="button"
-            class="btn btn-outline-secondary dropdown-toggle border-0"
-            data-toggle="dropdown"
-            aria-expanded="false"
-          >
+        <div class="dropdown" style="float: right">
+          <button class="dropbtn border-0 p-0 m-0">
             <img
-              class="navbar-image"
-              src="/assets/kids_icon.png"
-              alt="kids icon"
-              srcset=""
-              width="40px"
+              src="./assets/kids_icon.png"
+              width="40px;"
+              height="40px"
+              alt=""
             />
           </button>
-          <div class="dropdown-menu" id="dropdown-nav-elem">
-            <a class="dropdown-item" href="./accountSettings.html">Settings</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="./profile.html">Profile</a>
+          <div class="dropdown-content">
+            <a href="./profile.html">Profile</a>
+            <a href="./index.html">Main</a>
           </div>
         </div>
       </div>
     </nav>
     <!-- Account Settings -->
-    <section>
+    <section onClick="hideAppear1()">
       <div class="container Settings">
         <div class="row first_row">
           <h2 class="">Account</h2>
@@ -147,5 +152,6 @@
       integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
       crossorigin="anonymous"
     ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
