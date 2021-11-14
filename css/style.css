@@ -99,6 +99,9 @@ h6 {
 #dropdown-nav-elem {
   right: 0px;
 }
+.footer-hover {
+  font-size: 13px;
+}
 .footer-hover:hover {
   cursor: pointer;
   color: #999494;
