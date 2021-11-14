@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap");
 
 body {
-  font-family: "Josefin Sans", sans-serif;
-  font-family: "Zen Kurenaido", sans-serif;
+  font-family: sans-serif;
   width: 100%;
 }
 .all-page-section {
