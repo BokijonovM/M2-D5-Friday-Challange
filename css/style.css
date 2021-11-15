@@ -6,8 +6,8 @@ body{
 
 body {
   font-family: sans-serif;
-  width: 100%;
 }
+
 .all-page-section {
   margin-left: 10px;
   margin-right: 10px;
@@ -15,9 +15,7 @@ body {
 #nav-photo {
   width: 100px;
 
-}
-        
-    .navbar{
+.navbar{
   background-color: black;
 }
 .navbar-expand-lg .navbar-collapse .nav-link {
@@ -40,10 +38,10 @@ a {
 }
 
 
-.account-page{
-    min-width: 100vw;
-    min-height: 100vh;
-
+.account-page {
+  min-width: 100vw;
+  min-height: 100vh;
+}
 .search-icon-nav {
   width: 20px;
   height: 20px;
@@ -67,23 +65,9 @@ a {
   opacity: 1;
 }
 
-
-}
-
-
 a{
     color: #fff;
 }
-
-
-
-
-a {
-  color: #fff;
-}
-
-
-
 
 hr {
   border-top: 1px solid gray;
