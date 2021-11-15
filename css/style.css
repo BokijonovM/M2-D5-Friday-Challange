@@ -1,29 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap");
+
 
 body{
     font-family:  sans-serif;
     
         
+
+
+
+.navbar-expand-lg .navbar-collapse .nav-link {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  color: #fff;
+  margin-right: 20px;
+  line-height: 1.2;
+  font-size: 1rem;
 }
 
-.navbar{
-    background-color: #101010;
-}
-.navbar-expand-lg .navbar-collapse .nav-link{
-    padding-left :0;
-    padding-right: 0;
-    padding-bottom: 0;
-    color: #fff;
-    margin-right: 20px;
-    line-height: 1.2;
-    font-size: 1rem;
+.navbar-expand-lg .navbar-collapse .nav-link:hover {
+  cursor: pointer;
+  color: #999494;
 }
 
-.navbar-expand-lg .navbar-collapse .nav-link:hover{
-   
-    cursor: pointer;
-    color: #999494;
-
+a {
+  color: #fff;
 }
 
 .account-page{
@@ -36,26 +37,10 @@ a{
     color: #fff;
 }
 
-/* .Settings{
-
-    width: 60%;
-    margin-top: 2.5%;
-    } */
 
 
 
 h6{
     font-size: 12px;
 }
-
-/* .first_row{
-
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-}
-
-.studentInfo div{
-    border-bottom: 1px solid gray;
-    width:100% ;
-} */
 
