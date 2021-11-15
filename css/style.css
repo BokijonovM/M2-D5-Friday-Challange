@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap");
 
-
-body{
-    font-family:  sans-serif;
-
 body {
   font-family: sans-serif;
 }
@@ -14,7 +10,7 @@ body {
 }
 #nav-photo {
   width: 100px;
-
+}
 .navbar{
   background-color: black;
 }
