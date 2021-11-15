@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+      <script src="https://kit.fontawesome.com/73c4ca1b43.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="/css/style.css">
+      <style>
+         body{
+         background: rgb(173, 150, 150);
+         background: linear-gradient(0deg, rgba(48,45,45,1) 87%, rgba(27,25,25,1) 100%);        width: 100%;
+         margin:0;
+         color:white
+         }
+         form{
+         margin:60px;
+         padding-top:100px;  }
+         .content-size{
+         width:100%;
+         text-align: left;
+         }
+         .logo-netflix{
+         width:10%;
+         min-width: 100px;
+         position:absolute;
+         } 
+         hr{
+         background-color: rgba(128, 128, 128, 0.548);
+         }
+         .profile-pic{
+         position:relative;
+         }
+         .edit-profile{
+         position:absolute;
+         font-size: 35px;
+         top:150px;
+         left:10px;
+         color:black;
+         }
+      </style>
+   </head>
+   <body>
+      <nav class="navbar navbar-light" style="background-color: black">
+         <a class="navbar-brand" href="./index.html">
+           <img src="./assets/netflix_logo.png" width="90px" alt="">
+         </a>
+       </nav>
+
+      <!-- row to wrap the form and -->
+      <div class="container">
+      <div class="form-con row">
+         <div class="col-12 col-md-8 offset-md-1 offset-lg-2">
+            <form action="submit p-5">
+               <h1>Edit Profile</h1>
+               <hr>
+               <div class="row">
+                  <div class="col">
+                     <div class="profile-pic">
+                        <img class="content-size"src="https://ignite.strive.school/hosted/images/21/472d398ad64694996ab8189cfc78a7/LOGO.jpg" alt="strive school logo in pink">
+                        <i class=" edit-profile fas fa-pen-square"></i>
+                     </div>
+                  </div>
+                  <div class="col-8">
+                     <div class="formp-1">
+                        <input class="bg-secondary text-light"type="text" placeholder="Strive Student">
+                        <p class="mt-5"> <label for="language">Languages:</label></p>
+                        <!-- inserting language option -->
+                        <div class="input-group">
+                           <select class="custom-select bg-secondary text-light" id="inputGroupSelect04" aria-label="Example select with button addon">
+                              <option selected>Choose...</option>
+                              <option value="english">English</option>
+                              <option value="french">French</option>
+                              <option value="portuguese">Portuguese</option>
+                              <option value="danish">Danish</option>
+                              <option value="spanish">Spanish</option>
+                           </select>
+                        </div>
+                     </div>
+                     <hr>
+                     <div class="formp-2">
+                        <p>Maturity Settings</p>
+                        <button>ALL MATURITY RATINGS</button>
+                        <p>Show titles of all maturity ratings for this profile.</p>
+                        <button type="button" class="btn btn-outline-light">Edit</button>
+                     </div>
+                     <hr>
+                     <div>
+                        <p>Autoplay controls</p>
+                        <input type="checkbox" name="autoplay-next" id="">
+                        <label for="autoplay-next">Autoplay next episode in a series on all devices</label>
+                        <p></p>
+                        <input type="checkbox" name="" id="autoplay-preview">
+                        <label for="autoplay-preview">Auto Previews while browsing on all devices</label>
+                     </div>
+                  </div>
+               </div>
+               <div>
+                  <hr>
+                  <button type="button" class="btn btn-outline-light mr-2 ">SAVE</button>
+                  <button type="button" class="btn btn-outline-light m-2">CANCEL</button>
+                  <button type="button" class="btn btn-outline-light m-2">DELETE PROFILE</button>
+            </form>
+            </div>
+         </div>
+      </div>
+
+
+      
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+   </body>
+</html>
