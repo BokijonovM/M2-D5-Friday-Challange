@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap");
 
+
+body{
+    font-family:  sans-serif;
+
 body {
   font-family: sans-serif;
 }
@@ -10,9 +14,8 @@ body {
 }
 #nav-photo {
   width: 100px;
-}
 
-.navbar {
+.navbar{
   background-color: black;
 }
 .navbar-expand-lg .navbar-collapse .nav-link {
@@ -33,6 +36,7 @@ body {
 a {
   color: #fff;
 }
+
 
 .account-page {
   min-width: 100vw;
@@ -61,8 +65,8 @@ a {
   opacity: 1;
 }
 
-a {
-  color: #fff;
+a{
+    color: #fff;
 }
 
 hr {
@@ -70,6 +74,8 @@ hr {
   width: 100%;
   margin: 0 auto;
 }
+
+
 
 h6 {
   font-size: 12px;
@@ -141,3 +147,4 @@ h6 {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
