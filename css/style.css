@@ -3,11 +3,11 @@
 
 body{
     font-family:  sans-serif;
-    
+}
         
-
-
-
+    .navbar{
+  background-color: black;
+}
 .navbar-expand-lg .navbar-collapse .nav-link {
   padding-left: 0;
   padding-right: 0;
