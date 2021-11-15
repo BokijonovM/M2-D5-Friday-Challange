@@ -26,25 +26,36 @@ body{
 
 }
 
+.account-page{
+    min-width: 100vw;
+    min-height: 100vh;
 
+}
 
 a{
     color: #fff;
 }
 
-.Settings{
+/* .Settings{
 
-    width: 50%;
+    width: 60%;
     margin-top: 2.5%;
-    }
+    } */
 
-hr{
-   border-top: 1px solid gray ; 
-   width:100%;
-    margin:0 auto; 
-}
+
 
 h6{
     font-size: 12px;
 }
+
+/* .first_row{
+
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.studentInfo div{
+    border-bottom: 1px solid gray;
+    width:100% ;
+} */
 
