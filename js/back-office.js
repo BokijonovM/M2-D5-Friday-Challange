@@ -95,13 +95,13 @@ async function getTitleData(category) {
             throw err
         document.getElementById("subtitle").innerText = "Edit Event"
         let moviesData = await response.json()
+
         let movie = moviesData.filter(movie => movie._id === movieId)
 
         let inputs = document.querySelectorAll('.form-control')
         inputs.forEach(input => {
             input.value = movie[0][`${input.id}`]
         })
-
 
         document.getElementById('sendBtn').innerText = 'Update movie'
         throw err

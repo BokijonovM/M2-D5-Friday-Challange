@@ -24,6 +24,7 @@ async function getCategories() {
     let categories = await response.json()
     categories.pop()
     createSections(categories)
+    createSections1(categories)
     loadTitles(categories)
 
 }
@@ -45,6 +46,23 @@ function createSections(categories) {
         productDeck.classList.add('row', 'mx-0', 'productsDeck')
         productDeck.id = category
         newSection.insertAdjacentElement('beforeend', productDeck)
+
+        categoriesDeck.insertAdjacentElement('afterbegin', newSection)
+    });
+
+}
+function createSections1(categories) {
+    let categoriesDeck = document.querySelector('.movie-categories-html')
+
+    categories.forEach(category => {
+        let newSection = document.createElement('a')
+        newSection.classList.add('m-0', 'dropdown-item', 'pb-0')
+
+        let sectionTitle = document.createElement('h5')
+        sectionTitle.classList.add('m-0', 'row', 'text-dark')
+        sectionTitle.innerText = category
+        newSection.appendChild(sectionTitle)
+
 
         categoriesDeck.insertAdjacentElement('afterbegin', newSection)
     });
