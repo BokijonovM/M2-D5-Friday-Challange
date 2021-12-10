@@ -30,18 +30,19 @@ async function getCategories() {
 
 
 function createSections(categories) {
-    let categoriesDeck = document.querySelector('.movie-categories-html')
+    let categoriesDeck = document.querySelector('.genres-title')
 
     categories.forEach(category => {
-        let newSection = document.createElement('a')
-        newSection.classList.add('row', 'dropdown-item', 'm-0', 'pb-0')
+        let newSection = document.createElement('section')
+        newSection.classList.add('m-0', 'flex-column', 'pb-0')
 
-        let sectionTitle = document.createElement('row')
-        sectionTitle.classList.add('m-0')
+        let sectionTitle = document.createElement('h5')
+        sectionTitle.classList.add('m-0', 'row', 'mb-3')
         sectionTitle.innerText = category
         newSection.appendChild(sectionTitle)
 
         let productDeck = document.createElement('div')
+        productDeck.classList.add('row', 'mx-0', 'productsDeck')
         productDeck.id = category
         newSection.insertAdjacentElement('beforeend', productDeck)
 
@@ -66,6 +67,7 @@ async function loadTitles(categories) {
             categorySection.insertAdjacentHTML("afterbegin", `${generateTitlesHTML(title)}`)
 
         })
+        cardsResponsive()
 
     })
 
@@ -85,16 +87,47 @@ async function getTitles(category) {
 
 function generateTitlesHTML(title) {
     return `
-        <div class="card d-none col align-items-center mb-4 py-4 px-1">
-                <img src="${title.imageUrl}" class="card-img-top img-fluid" alt="...">       
-            <a href="./backoffice.html?movie_Id=${title._id}&category=${title.category}" class="mt-3"> Edit</a>
+        <div class="card col-3 align-items-center mb-4 bg-transparent img-hover-zoom">
+            <a href="../back-office.html?movie_Id=${title._id}&category=${title.category}"><img src="${title.imageUrl}" class="card-img-top" alt="...">  </a>  
+            
         </div>
     `
 }
+//<a class="text-white" href="../back-office.html?movie_Id=${title._id}&category=${title.category}"></a>   
 
 
 
+let test
+function cardsResponsive() {
+    let cards = document.querySelectorAll('.card')
+    let aux = 0
+    cards.forEach(card => {
 
+        if (aux === 0 || aux === 1) {
+            card.classList.add('d-sm-flex')
+        }
+
+        if (aux === 2 || aux === 3) {
+            card.classList.add('d-md-flex')
+        }
+
+
+        if (aux === 4) {
+            card.classList.add('d-lg-flex')
+        }
+        if (aux === 5) {
+            card.classList.add('d-xl-flex')
+        }
+
+        if (aux === 6) {
+            card.classList.add('d-xl-flex')
+            aux = 0
+            return
+        }
+        aux++
+    })
+
+}
 
 
 
