@@ -68,8 +68,10 @@
                         <div class="form-group">
                             <input id="film_img" type="text" name="txtPhone" class="form-control" placeholder="Image Url *" required value="" />
                         </div>
-                        <div class="form-group">
-                            <input id="send_btn" type="submit" name="btnSubmit" class="btnContact" value="Add Movie" required onclick="insertMovie(event)" />
+                        <div class="form-group d-flex">
+                            <input id="send_btn" type="submit" name="btnSubmit" class="btnContact d-flex mr-4" value="Add Movie" required onclick="getTitleInformation(event)" />
+                            <input id="delete_btn" type="button" name="btnSubmit" class="btnContact d-flex ml-5" value="Delete Movie" required onclick="deleteTitle(event)" />
+                            
                         </div>
                     </div>
                     <div class="col-md-6">

@@ -5,7 +5,6 @@ let method
 window.onload = () => {
     movieId = new URLSearchParams(window.location.search).get('movie_Id')
     category = new URLSearchParams(window.location.search).get('category')
-    removeSpinner()
     END_POINT = movieId ? `https://striveschool-api.herokuapp.com/api/movies/` + movieId : "https://striveschool-api.herokuapp.com/api/movies/"
     method = movieId ? "PUT" : "POST"
 
@@ -123,9 +122,6 @@ function displayAlert(status, msg) {
         document.querySelector('.alert').remove(), 3000)
 }
 
-function removeSpinner() {
-    document.querySelector('.loading').remove()
-}
 
 
 
