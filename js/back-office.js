@@ -13,6 +13,10 @@ window.onload = () => {
 }
 
 
+
+
+
+
 async function getTitleInformation(e) {
     e.preventDefault()
 
@@ -67,7 +71,7 @@ async function deleteTitle(e) {
             throw err
         displayAlert('success', `Title deleted successfully`)
 
-        setInterval(() => location.replace("file:///C:/Users/drdve/OneDrive/Homework__StriveSchool/Module03/M3-assestmentNetflix/M3-Assestment/M2-D5/index.html"), 3000)
+        setInterval(() => location.replace("file:///C:\Users\Muhsinjon Bokijonov\Documents\GitHub\M2-D5-Friday-Challange/index.html"), 3000)
 
     } catch (err) {
         displayAlert('danger', `${err}`)
@@ -89,6 +93,7 @@ async function getTitleData(category) {
         })
         if (response.ok != true)
             throw err
+        document.getElementById("subtitle").innerText = "Edit Event"
         let moviesData = await response.json()
         let movie = moviesData.filter(movie => movie._id === movieId)
 
@@ -96,6 +101,7 @@ async function getTitleData(category) {
         inputs.forEach(input => {
             input.value = movie[0][`${input.id}`]
         })
+
 
         document.getElementById('sendBtn').innerText = 'Update movie'
         throw err
